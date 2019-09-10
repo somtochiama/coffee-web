@@ -1,0 +1,21 @@
+.small-text {
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 0.2rem;
+    font-size: 15px !important;
+}
+
+.main-text {
+    line-height: 1;
+    font-weight: 500;
+    margin: 20px 0;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 300;
+    /* width: 40rem; */
+    /* margin: auto; */
+    margin: 10px 0;
+    font-family: 'Open Sans', 'Roboto', sans-serif;
+}
