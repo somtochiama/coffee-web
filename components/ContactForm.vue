@@ -1,6 +1,6 @@
 <template>
     <v-row class="email-section" dark>
-        <v-col data-aos="fade-up" data-aos-offset="0" class="d-flex flex-column align-center justify-center">
+        <v-col class="d-flex flex-column align-center justify-center">
             <h2 class="main-text my-2 display-1">Would you like to hear from us?</h2>
             <p>Submit your email address for our newletter</p>
             <input type="text" placeholder="yourname@mail.com">
