@@ -1,6 +1,7 @@
 <template>
     <v-row class="additional">
         <v-col 
+            data-aos="fade-left"
             md="3"
             v-for="card in cards"
             :key="card.img"
@@ -42,7 +43,7 @@ export default {
 
 } */
 .additional {
-  padding: 4rem 7rem;
+  padding: 4rem 7rem 0;
 }
 
 .info-section {

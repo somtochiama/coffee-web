@@ -2,22 +2,26 @@
     <v-row class="box">
       <v-col md="5" class="right">
           <v-toolbar flat class="nav">
-          <v-toolbar-items class="pa-0">
+          <v-toolbar-items data-aos="fade-left" class="pa-0">
             <v-btn text>Logo</v-btn>
           </v-toolbar-items>
           </v-toolbar>
-          <div class="small-text mt-8">Prenium Coffee</div>
-          <h1 class="main-text  my-2">A cup of pleasant coffee is one of the most important pleasures in life.</h1>
-          <ShopBtn />
+          <div data-aos="fade-up" class="small-text mt-8">Prenium Coffee</div>
+          <h1 data-aos="fade-up" class="main-text  my-2">A cup of pleasant coffee is one of the most important pleasures in life.</h1>
+          <ShopBtn data-aos="fade-up" />
       </v-col>
-      <v-col md="7" id="banner">
+      <v-col data-aos="fade-left" md="7" id="banner">
         <v-card flat>
           <v-toolbar flat class="nav d-flex justify-center">
           <v-toolbar-items>
-            <v-btn text>Shop</v-btn>
-            <v-btn text>Wholesame</v-btn>
-            <v-btn text>locations</v-btn>
-            <v-btn text>Our Story</v-btn>
+            <v-btn  
+              v-for="link in links"
+              :key="link"
+              data-aos="fade-left"  
+              text
+            >{{link}}</v-btn>
+            <img data-aos="fade-left" class="mr-3" src="../assets/icons/search.svg" />
+            <img data-aos="fade-left" class="ml-3" src="../assets/icons/user.svg" />
           </v-toolbar-items>
           </v-toolbar>
         </v-card>
@@ -29,6 +33,9 @@
 import ShopBtn from "~/components/ShopBtn.vue";
 
 export default {
+  data: () => ({
+    links: ["Shop", "Wholesale", "Location", "Our Story"]
+  }),
   components: {
     ShopBtn
   }
@@ -41,7 +48,12 @@ export default {
 }
 
 .nav {
-  background: none
+  background: none !important;
+}
+
+.nav  img {
+  width: 20px;
+
 }
 
 .right {

@@ -2,17 +2,17 @@
     <v-content class="pb-12 px-12" id="deals">
         <v-row>
             <v-col class="main-text">
-                <p class="small-text">Buy Now</p>
-                <h2 class="my-2">Our Best Deals</h2>
-                <p class="mission">Coffee company with a straightforward mission: to make an office and on-the-go cup of coffee that we like to drink ourselves</p>
+                <p data-aos="fade-up" class="small-text">Buy Now</p>
+                <h2 data-aos="fade-up" class="my-2">Our Best Deals</h2>
+                <p data-aos="fade-up" class="mission">Coffee company with a straightforward mission: to make an office and on-the-go cup of coffee that we like to drink ourselves</p>
             </v-col>
         </v-row>
         <v-row>
-            <v-col md="4" v-for="item in coffee" :key="item.level">
+            <v-col md="4" data-aos="fade-down" v-for="item in coffee" :key="item.level">
                 <div class="img">
                     <img src="../assets/product.png">
                 </div>
-                <div class="text">
+                <div class="text" data-aos="fade-up" data-aos-duration="1500">
                     <p class="small-text">{{item.level}}</p>
                     <p class="name">{{item.name}}</p>
                     <ShopBtn :small="true" :text="item.price"/>

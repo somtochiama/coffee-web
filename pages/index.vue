@@ -4,7 +4,7 @@
     <InfoSection />
     <QualityCoffee />
     <BestDeals />
-    <QualityCoffee />
+    <QualityCoffee :reverse="true"/>
     <Gallery />
     <ContactForm />
     <Footer />

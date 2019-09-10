@@ -11,7 +11,9 @@
     "generate": "nuxt generate"
   },
   "dependencies": {
-    "nuxt": "^2.0.0"
+    "aos": "^2.3.4",
+    "nuxt": "^2.0.0",
+    "nuxt-imagemin": "^1.0.0"
   },
   "devDependencies": {
     "@nuxtjs/vuetify": "^1.0.0"

@@ -71,6 +71,10 @@ export default {
     ** You can extend webpack config here
     */
     extend (config, ctx) {
-    }
-  }
+    },
+    vendor: ["aos"]
+  },
+  plugins: [{ src: "~/plugins/aos", ssr: false}],
+  css: ["aos/dist/aos.css"],
+  modules: ["nuxt-imagemin"]
 }

@@ -13,10 +13,10 @@
 
 <style scoped>
 .footer {
-    color: #5e6069;
-    background: #232428;
+    color: #5e6069 !important;
+    background: #232428 !important;
     padding: 0 4rem;
-    border-top: 1px solid;
+    border-top: 1px solid !important;
 }
 
 p {

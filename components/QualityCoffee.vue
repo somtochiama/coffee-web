@@ -1,6 +1,6 @@
 <template>
     <v-row class="before-section">
-        <v-col lg="6" class="d-flex mt-n12">
+        <v-col data-aos="fade-right" lg="6" :class="['img-lap', 'd-flex', 'mt-n12', {reverse: reverse}]">
             <div class="art">
                 <img class="dots" src="../assets/icons/blur.svg">
                 <div class="img-div">
@@ -9,13 +9,13 @@
                 <div class="bandaid"></div>
             </div>
         </v-col>
-        <v-col lg="6" class="d-flex align-center">
+        <v-col data-aos="fade-left" lg="6" class="d-flex align-center">
             <div class="main-text">
                 <p class="small-text">Prenium Good Coffee</p>
                 <h2 class="mt-3 text-capitalize">Quality Coffee</h2>
                 <h2 class="mb-3 text-capitalize">cultivated by good</h2>
                 <p class="long-text">Our love for specialty coffee is never-ending. With over 365 days a year at origin working with the best growers on the planet, only the best beens make the grade</p>
-                <ShopBtn />
+                <ShopBtn data-aos="fade-up" />
             </div>
         </v-col>
     </v-row>
@@ -24,6 +24,12 @@
 <script>
 import ShopBtn from "~/components/ShopBtn.vue"
 export default {
+    props: {
+        reverse: {
+            type: Boolean,
+            default: false
+        }
+    },
   components: {
       ShopBtn
   }  
@@ -53,6 +59,12 @@ h2 {
 
 .before-section {
     padding: 7rem 5rem;
+}
+
+.img-lap.reverse {
+    order: 1;
+    transform: rotate(90deg);
+    margin-top: 50px !important;
 }
 
 .art {
